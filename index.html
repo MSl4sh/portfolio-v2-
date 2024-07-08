@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Donovan Duperrois, développeur web junior." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <title>Duperrois Donovan</title>
+</head>
+
+<body>
+  <header data-aos="fade-down" data-aos-duration="1000">
+
+
+
+    <nav>
+      <ul>
+        <div class="logo-group">
+          <img src="./img/logo.png" alt="">
+          <p>Donovan</p>
+        </div>
+        <div class="nav-group">
+          <a href="#home" class="homeNav">Accueil</a>
+          <a href="#projects" class="projectsNav">Projets</a>
+          <a href="#skills" class="skillsNav">Compétences</a>
+          <a href="#aboutSec" class="aboutNav">Parcours</a>
+          <a href="#contact" class="contNav">Contact</a>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- page d'accueil -->
+    <div class="background" id="home">
+      <div class="homeContent">
+        <div class="home-left-section" data-aos="fade-right">
+          <h1>Duperrois Donovan</h1>
+          <p class="bolder">DÉVELOPPEUR</p>
+          <p class="lighter">FRONT-END </p>
+          <div class="home-desc">
+            Avec plus d'un an d'expérience dans la création d'expériences web attrayantes et fonctionnelles. Expert en
+            technologies front-end, y compris des frameworks tels que React, Vue.js, Svelte.js. Capable de traduire des
+            designs créatifs en code interactif et d'optimiser la vitesse et les performances du site web.
+          </div>
+          <div class="cta-group">
+            <a><button class="cta">Contactez-moi</button></a>
+            <a href="./img/CV Donovan.pdf" download=""><button class="cta-outlined">Téléchargez mon
+                CV</button></a>
+          </div>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/donovan-duperrois-b31ba7237/" target="_blank"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/MSl4sh" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:duperrois.donovan@gmail.com" target="_blank"><i class="fa-solid fa-at"></i></a>
+          </div>
+        </div>
+        <div class="home-right-section">
+          <img class="desk-pic" src="./img/aboutPic2.png" alt="" width="298" height="auto" data-aos="fade-up" />
+          <img class="mobile-pic" src="./img/photo.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="projects" id="projects">
+      <h2 data-aos="fade-up">
+        Projets
+      </h2>
+      <div class="carousel-container" data-aos="zoom-in">
+        <div class="carousel-slide" data-aos="zoom-in">
+          <div class="carousel-slide-img-container">
+            <img src="./img/Projets/nest.png" />
+          </div>
+          <div class="descText">
+            <div class="projectsText">
+              <div class="title-container">
+                <p class="title">Nest</p>
+                <div class="techno-container">
+                  <p class="techno">React</p>
+                  <p class="techno">Typescript</p>
+                  <p class="techno">Tailwind</p>
+                </div>
+              </div>
+              <p>
+                Nest est une plateforme de réservation de cabanes dans les arbres.</br>
+              </p>
+              <div class="links">
+                <a href="https://github.com/MSl4sh/nest" target="_blank" ><button class="cta-outlined"><i
+                      class="fa-brands fa-github"></i> voir sur github</button></a>
+                <a href="https://msl4sh.github.io/nest" target="_blank" ><button class="cta-outlined"><i
+                      class="fa-regular fa-eye"></i> Démo</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <div class="carousel-slide-img-container">
+            <img src="./img/Projets/jellyfish.png" />
+          </div>
+          <div class="descText">
+            <div class="projectsText">
+              <div class="title-container">
+                <p class="title">Jellyfish</p>
+                <div class="techno-container">
+                  <p class="techno">Javascript</p>
+                  <p class="techno">Node.js</p>
+                  <p class="techno">Discord.js</p>
+                </div>
+              </div>
+              <p>
+                JellyFish est un bot discord de modération développé en NodeJS
+                comportant toutes les fonctionnalités d'un bot
+                de modération.
+              </p>
+              <div class="links">
+                <a href="https://github.com/MSl4sh/SJS-Discord-bot" target="_blank" ><button
+                    class="cta-outlined"><i class="fa-brands fa-github"></i> voir sur github</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-slide" data-aos="zoom-in">
+          <div class="carousel-slide-img-container">
+            <img src="./img/Projets/wcw.png" />
+          </div>
+          <div class="descText">
+            <div class="projectsText">
+              <div class="title-container">
+                <p class="title">World Company Website</p>
+                <div class="techno-container">
+                  <p class="techno">HTML</p>
+                  <p class="techno">CSS</p>
+                </div>
+              </div>
+              <p>
+                World company Website est un exercice d'intégration web en
+                HTML et CSS réailisé lors de ma formation front end.
+
+              </p>
+              <div class="links">
+                <a href="https://github.com/MSl4sh/World-compagny-website" target="_blank"><button
+                    class="cta-outlined"><i class="fa-brands fa-github"></i> voir sur github</button></a>
+
+                <a href="https://msl4sh.github.io/World-compagny-website/" target="_blank"><button
+                    class="cta-outlined"><i class="fa-regular fa-eye"></i> Démo</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="skills" id="skills">
+      <h2 data-aos="fade-up">
+        Compétences
+      </h2>
+      <div class="skills-container">
+        <div class="skill">
+          <div class="skill-icon" data-aos="zoom-in" data-aos-duration="200">
+            <img src="./img/htmlLogo.png" alt="" />
+            <p>HTML</p>
+          </div>
+          <div class="skill-icon" data-aos="zoom-in" data-aos-duration="400">
+            <img src="./img/CSSLogo.png" alt="" />
+            <p>CSS</p>
+          </div>
+          <div class="skill-icon" data-aos="zoom-in" data-aos-duration="600">
+            <img src="./img/JSLogo.png" alt="" />
+            <p>Javascript</p>
+          </div>
+          <div class="skill-icon" data-aos="zoom-in" data-aos-duration="800">
+            <img src="./img/tsLogo.png" alt="" />
+            <p>Typescript</p>
+          </div>
+          <div class="skill-icon" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="./img/reactLogo.png" alt="" />
+            <p>React</p>
+          </div>
+          <div class="skill-icon" data-aos="zoom-in" data-aos-duration="1200">
+            <img src="./img/vue Logo.png" alt="" />
+            <p>Vue.js</p>
+          </div>
+          <div class="skill-icon" data-aos="zoom-in" data-aos-duration="1400">
+            <img src="./img/svelteLogo.png" alt="" />
+            <p>Svelte.js</p>
+          </div>
+          <div class="skill-icon" data-aos="zoom-in" data-aos-duration="1600">
+            <img src="./img/tailLogo.png" alt="" />
+            <p>Tailwind</p>
+          </div>
+          <div class="skill-icon" data-aos="zoom-in" data-aos-duration="1800">
+            <img src="./img/bootstrapLogo.png" alt="" />
+            <p>Bootstrap</p>
+          </div>
+          <div class="skill-icon" data-aos="zoom-in" data-aos-duration="2000">
+            <img src="./img/CoreUiLogo.png" alt="" />
+            <p>CoreUi</p>
+          </div>
+          <div class="skill-icon" data-aos="zoom-in" data-aos-duration="2200">
+            <img src="./img/nodeLogo.png" alt="" />
+            <p>Node.js</p>
+          </div>
+          <div class="skill-icon" data-aos="zoom-in" data-aos-duration="2400">
+            <img src="./img/MongoLogo.png" alt="" />
+            <p>MongoDb</p>
+          </div>
+          <div class="skill-icon" data-aos="zoom-in" data-aos-duration="2600">
+            <img src="./img/sqlLogo.png" alt="" />
+            <p>MySql</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="timeline" id="aboutSec">
+      <h2>Mon parcours</h2>
+      <div class="container left" data-aos="fade-right">
+        <div class="content">
+          <div>
+            <h2>Février 2022 - Avril 2022</h2>
+            <p>Formation "Découverte des métiers de l'informatique"</p>
+            <p class="subtitle">IF3n - Namur</p>
+          </div>
+          <div class="ref-logo">
+            <img src="./img/IF3n.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="container right" data-aos="fade-left">
+        <div class="content">
+          <div>
+            <h2>Mai 2022 - Octobre 2022</h2>
+            <p>Formation "Développeur full-stack Javascript"</p>
+            <p class="subtitle">IF3n - Namur</p>
+          </div>
+          <div class="ref-logo">
+            <img src="./img/IF3n.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="container left" data-aos="fade-right">
+        <div class="content">
+          <div>
+            <h2>Novembre 2022 - Avril 2023</h2>
+            <p>Formation "Développeur front-end"</p>
+            <p class="subtitle">TéchnoCité - Hornu</p>
+          </div>
+          <div class="ref-logo">
+            <img src="./img/Techno.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="container right" data-aos="fade-left">
+        <div class="content">
+          <div>
+            <h2>Mai 2023 - Juillet 2023</h2>
+            <p>Stage "Développeur front-end"</p>
+            <p class="subtitle">Bobex - Bruxelles</p>
+          </div>
+          <div class="ref-logo">
+            <img src="./img/Bobex.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="container left" data-aos="fade-right">
+        <div class="content">
+          <div>
+            <h2>Juillet 2023 - Aujourd'hui</h2>
+            <p>CDI "Développeur front-end junior"</p>
+            <p class="subtitle">Bobex - Bruxelles</p>
+          </div>
+          <div class="ref-logo">
+            <img src="./img/Bobex.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <h2 data-aos="fade-up">Mes Contact</h2>
+      <div class="contactCard" >
+        <div class="card" data-aos="fade-up">
+          <div>
+            <img src="./img/photo.png" alt="" />
+          </div>
+          <h2>Mes contacts</h2>
+          <p>N'hésitez pas à me contacter via l'un des réseaux suivants.</p>
+          <div class="cardNav">
+            <div>
+              <a href="https://www.linkedin.com/in/donovan-duperrois-b31ba7237/" target="_blank"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+            <div>
+              <a href="https://github.com/MSl4sh" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+            </div>
+            <div>
+              <a href="mailto:duperrois.donovan@gmail.com" target="_blank"><i class="fa-solid fa-at"></i></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
