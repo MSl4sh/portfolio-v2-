@@ -136,7 +136,7 @@
                 <div class="flex-1">
                   <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2 sm:mb-3 md:mb-4">Aurora</h3>
                   <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">
-                    Aurora est un bot discord polyvalent de modération développé en NodeJS comportant toutes les fonctionnalités d'un bot de modération.
+                    Aurora est un bot discord polyvalent de modération développé en NodeJS comportant toutes les fonctionnalités d'un bot de modération et plus encore.
                   </p>
                   <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 md:mb-6">
                     <span class="bg-white/5 text-white px-2 sm:px-3 py-1 rounded text-xs sm:text-sm">Javascript</span>
@@ -167,7 +167,7 @@
                 <div class="flex-1">
                   <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2 sm:mb-3 md:mb-4">Nest</h3>
                   <p class="text-text-secondary text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">
-                    Nest est une plateforme de réservation de cabanes dans les arbres.
+                    Nest est une plateforme fictive de réservation de cabanes dans les arbres.
                   </p>
                   <div class="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 md:mb-6">
                     <span class="bg-white/5 text-white px-2 sm:px-3 py-1 rounded text-xs sm:text-sm">React</span>
@@ -361,217 +361,6 @@
       </div>
     </section>
 
-    <style>
-      /* Mobile menu styles */
-      #mobileMenu .mobile-menu-container {
-        visibility: hidden;
-        opacity: 0;
-        transition: all 0.3s ease-in-out;
-        background: linear-gradient(180deg, 
-          var(--background) 0%, 
-          var(--background-alt) 100%
-        );
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      }
-
-      /* Menu open state */
-      #mobileMenu .mobile-menu-container.open {
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      /* Menu links animation */
-      #mobileMenu .mobile-menu-container .mobile-link {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 0.3s ease;
-      }
-
-      /* Links visible state */
-      #mobileMenu .mobile-menu-container.open .mobile-link {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      /* Staggered animation delays */
-      #mobileMenu .mobile-menu-container.open .mobile-link:nth-child(1) { transition-delay: 0.1s; }
-      #mobileMenu .mobile-menu-container.open .mobile-link:nth-child(2) { transition-delay: 0.2s; }
-      #mobileMenu .mobile-menu-container.open .mobile-link:nth-child(3) { transition-delay: 0.3s; }
-      #mobileMenu .mobile-menu-container.open .mobile-link:nth-child(4) { transition-delay: 0.4s; }
-      #mobileMenu .mobile-menu-container.open .mobile-link:nth-child(5) { transition-delay: 0.5s; }
-
-      /* Hamburger button styles */
-      #menuBtn {
-        z-index: 50;
-      }
-
-      /* Hamburger bars */
-      #menuBtn span {
-        display: block;
-        width: 24px;
-        height: 2px;
-        background-color: white;
-        transition: all 0.3s ease;
-        transform-origin: center;
-      }
-
-      /* Active state animations */
-      #menuBtn.active span:first-child {
-        transform: translateY(8px) rotate(45deg);
-      }
-
-      #menuBtn.active span:nth-child(2) {
-        opacity: 0;
-        transform: scale(0);
-      }
-
-      #menuBtn.active span:last-child {
-        transform: translateY(-8px) rotate(-45deg);
-      }
-
-      /* Skills wheel layout */
-      .skill-wheel-container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-      }
-
-      .skill-orbital {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-      }
-
-      /* Skill icon styling */
-      .skill-icon-container {
-        position: absolute;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        margin-top: -35px;
-        margin-left: -35px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(41, 151, 255, 0.1);
-        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        box-shadow: 0 0 20px rgba(41, 151, 255, 0.1);
-        z-index: 5;
-      }
-
-      /* Fixed positions for each skill icon */
-      .skill-orbital:nth-child(1) .skill-icon-container { transform: translateY(-180px); }
-      .skill-orbital:nth-child(2) .skill-icon-container { transform: translate(127px, -127px); }
-      .skill-orbital:nth-child(3) .skill-icon-container { transform: translateX(180px); }
-      .skill-orbital:nth-child(4) .skill-icon-container { transform: translate(127px, 127px); }
-      .skill-orbital:nth-child(5) .skill-icon-container { transform: translateY(180px); }
-      .skill-orbital:nth-child(6) .skill-icon-container { transform: translate(-127px, 127px); }
-      .skill-orbital:nth-child(7) .skill-icon-container { transform: translateX(-180px); }
-      .skill-orbital:nth-child(8) .skill-icon-container { transform: translate(-127px, -127px); }
-
-      /* Hover effects with pulse */
-      .skill-icon-container:hover {
-        transform-origin: center;
-        box-shadow: 0 0 30px rgba(41, 151, 255, 0.4);
-        background-color: rgba(41, 151, 255, 0.2);
-        z-index: 10;
-      }
-
-      /* Hover transforms for each position */
-      .skill-orbital:nth-child(1) .skill-icon-container:hover { transform: translateY(-180px) scale(1.2); }
-      .skill-orbital:nth-child(2) .skill-icon-container:hover { transform: translate(127px, -127px) scale(1.2); }
-      .skill-orbital:nth-child(3) .skill-icon-container:hover { transform: translateX(180px) scale(1.2); }
-      .skill-orbital:nth-child(4) .skill-icon-container:hover { transform: translate(127px, 127px) scale(1.2); }
-      .skill-orbital:nth-child(5) .skill-icon-container:hover { transform: translateY(180px) scale(1.2); }
-      .skill-orbital:nth-child(6) .skill-icon-container:hover { transform: translate(-127px, 127px) scale(1.2); }
-      .skill-orbital:nth-child(7) .skill-icon-container:hover { transform: translateX(-180px) scale(1.2); }
-      .skill-orbital:nth-child(8) .skill-icon-container:hover { transform: translate(-127px, -127px) scale(1.2); }
-
-      /* Skill icon sizing */
-      .skill-icon {
-        width: 90%;
-        height: 90%;
-        object-fit: contain;
-      }
-
-      /* Tooltip setup */
-      .data-tooltip {
-        position: relative;
-      }
-
-      /* Tooltip display */
-      .data-tooltip::after {
-        content: attr(data-tooltip-content);
-        position: absolute;
-        bottom: -40px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: rgba(0, 0, 0, 0.8);
-        color: white;
-        padding: 4px 8px;
-        border-radius: 4px;
-        font-size: 12px;
-        white-space: nowrap;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        pointer-events: none;
-        z-index: 100;
-      }
-
-      /* Show tooltip on hover */
-      .data-tooltip:hover::after {
-        opacity: 1;
-        visibility: visible;
-      }
-
-      /* Pulse animation for borders */
-      @keyframes pulse-border {
-        0%, 100% { opacity: 0.6; }
-        50% { opacity: 1; }
-      }
-
-      /* Subtle pulse animation for icons */
-      .skill-icon-container {
-        animation: pulse-icon 3s ease-in-out infinite;
-        animation-delay: calc(var(--pulse-delay, 0) * 0.5s);
-      }
-
-      /* Animation delays for each icon */
-      .skill-orbital:nth-child(1) .skill-icon-container { --pulse-delay: 0; }
-      .skill-orbital:nth-child(2) .skill-icon-container { --pulse-delay: 1; }
-      .skill-orbital:nth-child(3) .skill-icon-container { --pulse-delay: 2; }
-      .skill-orbital:nth-child(4) .skill-icon-container { --pulse-delay: 3; }
-      .skill-orbital:nth-child(5) .skill-icon-container { --pulse-delay: 4; }
-      .skill-orbital:nth-child(6) .skill-icon-container { --pulse-delay: 5; }
-      .skill-orbital:nth-child(7) .skill-icon-container { --pulse-delay: 6; }
-      .skill-orbital:nth-child(8) .skill-icon-container { --pulse-delay: 7; }
-
-      /* Pulse animation keyframes */
-      @keyframes pulse-icon {
-        0%, 100% { 
-          transform: scale(1) translate(var(--translate-x, 0), var(--translate-y, 0)); 
-          box-shadow: 0 0 20px rgba(41, 151, 255, 0.1);
-        }
-        50% { 
-          transform: scale(1.05) translate(var(--translate-x, 0), var(--translate-y, 0)); 
-          box-shadow: 0 0 25px rgba(41, 151, 255, 0.2);
-        }
-      }
-
-      /* Icon position variables */
-      .skill-orbital:nth-child(1) .skill-icon-container { --translate-y: -180px; }
-      .skill-orbital:nth-child(2) .skill-icon-container { --translate-x: 127px; --translate-y: -127px; }
-      .skill-orbital:nth-child(3) .skill-icon-container { --translate-x: 180px; }
-      .skill-orbital:nth-child(4) .skill-icon-container { --translate-x: 127px; --translate-y: 127px; }
-      .skill-orbital:nth-child(5) .skill-icon-container { --translate-y: 180px; }
-      .skill-orbital:nth-child(6) .skill-icon-container { --translate-x: -127px; --translate-y: 127px; }
-      .skill-orbital:nth-child(7) .skill-icon-container { --translate-x: -180px; }
-      .skill-orbital:nth-child(8) .skill-icon-container { --translate-x: -127px; --translate-y: -127px; }
-    </style>
-
     <!-- Section Parcours -->
     <section id="aboutSec" class="min-h-screen flex items-center justify-center bg-background py-16">
       <div class="container max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
@@ -582,7 +371,7 @@
             <div class="timeline-content">
               <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div>
-                  <h3 class="text-xl font-bold text-white mb-2">Formation "Découverte des métiers de l'informatique"</h3>
+                  <h3 class="text-xl font-bold text-white mb-2 text-start">Formation "Découverte des métiers de l'informatique"</h3>
                   <div class="flex items-center gap-2 mb-2">
                     <i class="fa-regular fa-calendar text-accent"></i>
                     <p class="text-text-secondary">Février 2022 - Avril 2022</p>
@@ -604,7 +393,7 @@
             <div class="timeline-content">
               <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div>
-                  <h3 class="text-xl font-bold text-white mb-2">Formation "Développeur full-stack Javascript"</h3>
+                  <h3 class="text-xl font-bold text-white mb-2 text-start">Formation "Développeur full-stack Javascript"</h3>
                   <div class="flex items-center gap-2 mb-2">
                     <i class="fa-regular fa-calendar text-accent"></i>
                     <p class="text-text-secondary">Mai 2022 - Octobre 2022</p>
@@ -626,7 +415,7 @@
             <div class="timeline-content">
               <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div>
-                  <h3 class="text-xl font-bold text-white mb-2">Formation "Développeur front-end"</h3>
+                  <h3 class="text-xl font-bold text-white mb-2 text-start">Formation "Développeur front-end"</h3>
                   <div class="flex items-center gap-2 mb-2">
                     <i class="fa-regular fa-calendar text-accent"></i>
                     <p class="text-text-secondary">Novembre 2022 - Avril 2023</p>
@@ -648,7 +437,7 @@
             <div class="timeline-content">
               <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div>
-                  <h3 class="text-xl font-bold text-white mb-2">Stage "Développeur front-end"</h3>
+                  <h3 class="text-xl font-bold text-white mb-2 text-start">Stage "Développeur front-end"</h3>
                   <div class="flex items-center gap-2 mb-2">
                     <i class="fa-regular fa-calendar text-accent"></i>
                     <p class="text-text-secondary">Mai 2023 - Juillet 2023</p>
@@ -670,7 +459,7 @@
             <div class="timeline-content">
               <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div>
-                  <h3 class="text-xl font-bold text-white mb-2">CDI "Développeur front-end junior"</h3>
+                  <h3 class="text-xl font-bold text-white mb-2 text-start">CDI "Développeur front-end junior"</h3>
                   <div class="flex items-center gap-2 mb-2">
                     <i class="fa-regular fa-calendar text-accent"></i>
                     <p class="text-text-secondary">Juillet 2023 - Octobre 2024</p>
@@ -787,12 +576,10 @@
       </div>
     </section>
   </main>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script src="./script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
